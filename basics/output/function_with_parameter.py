@@ -2,5 +2,7 @@
 #escape_by("running around")
 #escape by("going deeper")
 
-#we cannot escape that way! The boulder will be big
-#we cannot escape that way! The
+#we cannot escape that way! The boulder will be too big!
+#we cannot escape that way! The boulder is moving too fast!
+#that might work! Let's go deeper!
+
