@@ -9,19 +9,22 @@ def findPrime(beginning,finish):
     if isPrime(j):
       return j
 
-x=6
-y=12
+def encrypt():
+  print("Provide two integers")
+  x = int(input())
+  y = int(input())
+  prime1 = findPrime(x,y)
+  print("Provide two more integers")
+  x = int(input())
+  y = int(input())
+  prime2 = findPrime(x,y)
+  return prime1*prime2
 
-print(f"The prime between {x} and {y} is {findPrime(x,y)}")
+print (encrypt()), (encrypt())
+
 
 
   
-
-
-
-
-
-
 
 
 #print("What is the number?")
