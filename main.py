@@ -1,35 +1,18 @@
-def isPrime(x):
-  for i in range(2,x):
-    if x%i == 0:
-      return False
-  return True
+def get_fruits():
+  fruits = []
+  print("How many fruits would you like to enter?")
+  n = int(input())
+  for i in range(n):
+    print("type in the next fruit:")
+    fruits.append(input())
 
-def findPrime(beginning,finish):
-  for j in range(beginning,finish):
-    if isPrime(j):
-      return j
+  #Print all items
+  print("Your fruits are {}".format(fruits))
+  #Print few items by Slicing
+  print(f"Sliced list: {fruits[0:5]}")
 
-def encrypt():
-  print("Provide two integers")
-  x = int(input())
-  y = int(input())
-  prime1 = findPrime(x,y)
-  print("Provide two more integers")
-  x = int(input())
-  y = int(input())
-  prime2 = findPrime(x,y)
-  return prime1*prime2
-
-print (encrypt()), (encrypt())
+  #Print only few items using negative index
+  print(f"Negative index: {fruits[-2:0:-1]}")
 
 
-
-  
-
-
-#print("What is the number?")
-#x=int(input())
-#if isPrime(x):
- # print(f"The number {x} is prime")
-#else:
-  #print("The number is not prime")
+get_fruits()
