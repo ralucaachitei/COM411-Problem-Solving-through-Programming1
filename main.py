@@ -4,10 +4,30 @@ def isPrime(x):
       return False
   return True
 
-print("What is the number?")
-x=int(input())
-if isPrime(x):
-  print(f"The number {x} is prime")
-else:
-  print("The number is not prime")
+def findPrime(beginning,finish):
+  for j in range(beginning,finish):
+    if isPrime(j):
+      return j
+
+x=32
+y=35
+
+print(f"The prime between {x} and {y} is {findPrime(x,y)}")
+
+
+  
+
+
+
+
+
+
+
+
+#print("What is the number?")
+#x=int(input())
+#if isPrime(x):
+ # print(f"The number {x} is prime")
+#else:
+  #print("The number is not prime")
 
