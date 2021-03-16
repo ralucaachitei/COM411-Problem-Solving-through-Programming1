@@ -2,6 +2,7 @@
 #escape_by("running around")
 #escape by("going deeper")
 
+<<<<<<< HEAD
 #we cannot escape that way! The boulder is too big!
 #we cannot escape that way! The boulder is moving too fast!
 #that might work! Let's go deeper!
@@ -25,3 +26,9 @@ escape_by("running over")
 escape_by("going deeper")
 escape_by("not sure about the plan")
 escape_by("let's listen")
+=======
+#we cannot escape that way! The boulder will be too big!
+#we cannot escape that way! The boulder is moving too fast!
+#that might work! Let's go deeper!
+
+>>>>>>> 95fa73c4e9ce411f899a03f6c3ee3863c96211f0

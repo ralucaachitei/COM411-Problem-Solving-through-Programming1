@@ -33,4 +33,3 @@ print (encrypt()), (encrypt())
  # print(f"The number {x} is prime")
 #else:
   #print("The number is not prime")
-
