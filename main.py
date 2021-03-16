@@ -9,8 +9,8 @@ def findPrime(beginning,finish):
     if isPrime(j):
       return j
 
-x=32
-y=35
+x=6
+y=12
 
 print(f"The prime between {x} and {y} is {findPrime(x,y)}")
 
