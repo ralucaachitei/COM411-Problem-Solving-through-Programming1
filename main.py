@@ -1,14 +1,16 @@
-def movements():
-  path = ["Move forward",10, "Move backward",5,"Move left",3, "Move right",1 ]
-  return path
+def shop():
+  items = {
+    "eggs": 1.99,
+    "milk": 0.99,
+    "cereals": 2.99,
+    "steak": 4.79,
+    "Beer": 2.99,
+    "Sausage": 1.29,
+    "Vinegar": 2.49,
+    "Bread": 1.49
+     }
+  return items
 
-def run():
-  print("Moving...")
-  path = movements()
-  print(f"{path[0]} for {path[1]} steps")
-  print(f"{path[2]} for {path[3]} steps")
-  print(f"{path[4]} for {path[5]} steps")
-  print(f"{path[6]} for {path[7]} steps")
-  print(f"stop")
-
-run()
+def view_all(products ={}):
+  for i in products:
+    print(i)
