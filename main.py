@@ -1,25 +1,24 @@
 import matplotlib.pyplot as plt
 
-def coordinate():
-  print("please enter an x value:")
-  x=int(input())
+def read_data(filename):
+  f = open(filename, "r")
+  content = f.readlines()
+  f.close()
+  return content 
 
-  print("please enter a y value:")
-  y=int(input())
-  return(x,y)
-def path():
-  print("retriving path...")
-  x_values=[]
-  y_values=[]
-  for count in range (4):
-    data=coordinate()
-    x_values.append(data[0])
-    y_values.append(data[1])
-  return [x_values, y_values]
 def run():
-  values=path()
-  plt.plot(values[0],values[1],"r--o")
+  data = read_data("visuals/subplots/temps.txt")
+  fig, axes = plt.subplots(1,2)
+  x = range(1,8,1)
+  y = data
+  axes[0].plot(x,y)
+  axes[1].bar(x,y)
+  plt.show
+
 run()
+
+
+
 
 
 
